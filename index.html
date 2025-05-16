@@ -85,12 +85,27 @@
       text-align: center;
       padding: 20px;
     }
+    .logo-overlay {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 120px;
+      height: 120px;
+      background-image: url('Logo.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: 0.08;
+      border-radius: 50%;
+      z-index: 1;
+      }
   </style>
 </head>
 <body>
   <header>
-    <img src="Logo.jpg" alt="Logo VP & TNS" style="width: 150px; margin-bottom: 20px;">
-    <h1>Vamos Pamos & The New Seasons</h1>
+  <div class="logo-overlay"></div>
+    <div>
+      <h1>Vamos Pamos & The New Seasons</h1>
+    </div>
   </header>
   <nav>
     <a href="#musica">Música</a>
